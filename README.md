@@ -1,8 +1,8 @@
-Installing
+# Installing
 
 ```go get -u github.com/kenjione/importer```
 
-Getting Started
+# Getting Started
 
 ```golang
 package main
@@ -32,7 +32,7 @@ func main() {
     os.Exit(1)
   }
 
-  fmt.Println("Location: ", lbytes)
+  fmt.Println("Location: ", string(lbytes))
 }
 
 ```
