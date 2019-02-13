@@ -57,8 +57,8 @@ func (p *Parser) Parse() *Stats {
 
 		total++
 
-		if total%10000 == 0 {
-			fmt.Printf("%+v records handled!", total)
+		if total%50000 == 0 {
+			fmt.Printf("%+v records handled!\n", total)
 		}
 
 		if err != nil {
