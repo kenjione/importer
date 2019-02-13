@@ -11,7 +11,7 @@ import "github.com/kenjione/importer"
 
 func main() {
   i := importer.NewImporter(&importer.Config{
-    DatabaseHost:     "hostname",
+    DatabaseName:     "dbname",
     DatabaseUser:     "user",
     DatabasePassword: "password",
   })

@@ -13,7 +13,7 @@ type Importer struct {
 
 func NewImporter(cnf *Config) *Importer {
 	conn := pg.Connect(&pg.Options{
-		Database: cnf.DatabaseHost,
+		Database: cnf.DatabaseName,
 		User:     cnf.DatabaseUser,
 		Password: cnf.DatabasePassword,
 		Addr:     cnf.DatabaseAddr,

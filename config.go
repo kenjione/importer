@@ -1,7 +1,7 @@
 package importer
 
 type Config struct {
-	DatabaseHost     string
+	DatabaseName     string
 	DatabaseUser     string
 	DatabasePassword string
 	DatabaseAddr     string
