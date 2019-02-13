@@ -4,5 +4,5 @@ type Config struct {
 	DatabaseHost     string
 	DatabaseUser     string
 	DatabasePassword string
-	DataDump         string
+	Addr             string
 }
