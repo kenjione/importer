@@ -2,6 +2,7 @@ package internal
 
 import (
 	"encoding/csv"
+	"fmt"
 	"io"
 	"log"
 	"os"
@@ -43,12 +44,21 @@ func (p *Parser) Parse() *Stats {
 	stats := &Stats{}
 
 	start := time.Now()
+	total := 0
+
+	fmt.Println("Import started")
 
 	for {
 		line, err := reader.Read()
 
 		if err == io.EOF {
 			break
+		}
+
+		total++
+
+		if total%10000 == 0 {
+			fmt.Printf("%+v records handled!", total)
 		}
 
 		if err != nil {
