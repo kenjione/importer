@@ -16,7 +16,7 @@ func NewImporter(cnf *Config) *Importer {
 		Database: cnf.DatabaseHost,
 		User:     cnf.DatabaseUser,
 		Password: cnf.DatabasePassword,
-		Addr:     cnf.Addr,
+		Addr:     cnf.DatabaseAddr,
 	})
 
 	model.CreateSchema(conn)
